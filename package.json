@@ -1,0 +1,27 @@
+{
+  "name": "parse-bson-objectid",
+  "version": "0.0.0",
+  "description": "Parse parts of a BSON ObjectId",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parshap/parse-bson-objectid.git"
+  },
+  "keywords": [
+    "bson",
+    "objectid"
+  ],
+  "author": "Parsha Pourkhomami",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/parshap/parse-bson-objectid/issues"
+  },
+  "homepage": "https://github.com/parshap/parse-bson-objectid#readme",
+  "devDependencies": {
+    "bson": "^0.4.19",
+    "tape": "^4.2.2"
+  }
+}
