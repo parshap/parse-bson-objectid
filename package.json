@@ -1,6 +1,6 @@
 {
   "name": "parse-bson-objectid",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Parse parts of a BSON ObjectId",
   "main": "index.js",
   "scripts": {
