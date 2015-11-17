@@ -10,8 +10,9 @@ test("basic", function(t) {
   t.notEqual(parsed.process, null);
   t.notEqual(parsed.counter, null);
   t.equal(typeof parsed.timestamp, "number");
-  t.equal(typeof parsed.timestamp, "number");
-  t.ok(Buffer.isBuffer(parsed.process));
+  t.equal(typeof parsed.counter, "number");
+  t.equal(typeof parsed.pid, "number");
+  t.ok(Buffer.isBuffer(parsed.machine));
   t.end();
 });
 
@@ -22,10 +23,17 @@ test("counter increases by 1", function(t) {
   t.end();
 });
 
-test("process should be same", function(t) {
+test("machine should be same", function(t) {
   var parsed1 = parse(create());
   var parsed2 = parse(create());
-  t.ok(parsed1.process.equals(parsed2.process));
+  t.ok(parsed1.machine.equals(parsed2.machine));
+  t.end();
+});
+
+test("pid should be same", function(t) {
+  var parsed1 = parse(create());
+  var parsed2 = parse(create());
+  t.equal(parsed1.pid, parsed2.pid);
   t.end();
 });
 
